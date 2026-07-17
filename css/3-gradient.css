@@ -1,0 +1,39 @@
+.linear-gradient,
+.radial-gradient {
+  height: 50px;
+  width: 100%;
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.7),
+    blue,
+    black,
+    red,
+    yellow,
+    pink,
+    green
+  );
+}
+
+.radial-gradient {
+  background: radial-gradient(circle, red, blue);
+}
+
+.skeleton {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200%0;
+  }
+  100% {
+    background-position: -200%0;
+  }
+}
